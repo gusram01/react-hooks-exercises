@@ -11,9 +11,12 @@ import ReactDOM from 'react-dom';
 // import LayoutEffect from './components/05-useLayoutEffect/LayoutEffect';
 // import MemoHook from './components/06-memos/MemoHook';
 // import CallbackHook from './components/06-memos/CallbackHook';
-import Parent from './components/07-hw-memos/Parent';
+// import Parent from './components/07-hw-memos/Parent';
+// import './components/08-useReducer/intro-reducer';
+import TodoApp from './components/08-useReducer/TodoApp';
 
 ReactDOM.render(
-  <Parent />,
+  <TodoApp />,
   document.getElementById('root')
 );
+
