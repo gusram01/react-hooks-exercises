@@ -23,9 +23,9 @@ interface StateResponse {
 }
 
 export const useFetch = (url: string) => {
-  let initialState: StateResponse = { data: [], loading: true, error: null }
 
   const isMounted = useRef(true);
+  let initialState: StateResponse = { data: [], loading: true, error: null }
 
   useEffect(() => {
     return () => {
@@ -48,8 +48,10 @@ export const useFetch = (url: string) => {
             data
           });
         }
-
-      })
+        if (!data) {
+          throw new Error('putsss')
+        }
+      }).catch(() => setState({ ...initialState, error: true }));
   }, [url]);
 
   return state;

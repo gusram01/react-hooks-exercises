@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HooksApp tests HooksApp should render correctly 1`] = `
+<h1>
+  Hello
+</h1>
+`;
+
+exports[`HooksApp tests should HooksApp render correctly 1`] = `
+<h1>
+  Hello
+</h1>
+`;
