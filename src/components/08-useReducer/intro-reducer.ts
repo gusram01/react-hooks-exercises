@@ -16,16 +16,16 @@ const action = {
   payload: newTodo
 }
 
-export const todoReducer = (state = initialState, action: { type: string; payload: any }) => {
+export const todoReducer1 = (state = initialState, action: { type: string; payload: any }) => {
   if (action.type === 'add') {
     return [...state, action.payload];
   }
   return state;
 };
 
-const todos = todoReducer(initialState, action);
+const todos = todoReducer1(initialState, action);
 
 
 
 
-console.log(todos);
+// console.log(todos);
