@@ -1,12 +1,12 @@
 import { createContext, Dispatch, SetStateAction } from "react";
 
-interface User {
+export interface User {
   id?: number;
   name?: string;
   email?: string;
 }
 
-interface Context {
+export interface Context {
 
   user?: User;
   setUser?: Dispatch<SetStateAction<User>>;
